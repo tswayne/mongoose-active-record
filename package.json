@@ -1,0 +1,31 @@
+{
+  "name": "mongoose-active-record",
+  "version": "1.0.0",
+  "description": "Activerecord-like bindings for mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tswayne/mongoose-active-record.git"
+  },
+  "keywords": [
+    "mongoose",
+    "mongo",
+    "mongodb",
+    "activerecord"
+  ],
+  "author": "Tyler Swayne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tswayne/mongoose-active-record/issues"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/tswayne/mongoose-active-record#readme",
+  "dependencies": {
+    "mongoose": ">=5.0.0"
+  }
+}

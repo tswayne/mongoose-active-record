@@ -53,9 +53,12 @@ const mongooseActiveRecord = require('mongoose-active-record')
 
 const options = {
   modelPath: path.join(__dirname, './models'),
-  databaseConnectionUrl: 'mongodb://localhost/test',
-  mongooseConnectionOptions: {
+  connectionUrl: 'mongodb://localhost/test',
+  connectionOptions: {
     useNewUrlParser: true
+  },
+  schemaOptions: {
+    timestamps: true
   }
 }
 
@@ -88,8 +91,9 @@ Specifics:
 
 ## Options
 * modelPath: Path to the directory where your models are defined.
-* databaseConnectionUrl: Any valid [mongoose connection string](https://mongoosejs.com/docs/connections.html#connection-string-options) 
-* mongooseConnectionOptions: Any valid [mongoose connection option](https://mongoosejs.com/docs/connections.html#options)
+* connectionUrl: Any valid [mongoose connection string](https://mongoosejs.com/docs/connections.html#connection-string-options) 
+* connectionOptions: Any valid [mongoose connection option](https://mongoosejs.com/docs/connections.html#options)
+* schemaOptions: any valid [mongoose schema option](https://mongoosejs.com/docs/guide.html#options)
 
 ## Contributing
 Pull requests or issues welcome!
